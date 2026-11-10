@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cuestionario - Educación Vial</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <span class="eyebrow">
+            TRABAJO PRÁCTICO · TERCER TRIMESTRE
+        </span>
+
+        <h1>Educación <span>Vial</span></h1>
+
+        <p>Modo cuestionario: poné a prueba lo que aprendiste.</p>
+
+        <nav class="main-nav">
+            <a class="nav-link" href="index.html">📖 Guía</a>
+            <a class="nav-link active" href="cuestionario.html">📝 Cuestionario</a>
+        </nav>
+    </header>
+
+    <main class="quiz-main">
+
+        <!-- PANTALLA DEL CUESTIONARIO -->
+        <section class="quiz-panel" id="quizPanel">
+
+            <div class="quiz-meta">
+                <span id="progress">Pregunta 1 de 12</span>
+                <span id="topic" class="tag">Tema</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="questionText">Preparando pregunta...</h2>
+
+            <div id="options" class="options"></div>
+
+            <p id="feedback" class="feedback" aria-live="polite"></p>
+
+            <div class="quiz-actions">
+                <button id="nextBtn" type="button" disabled>
+                    Siguiente →
+                </button>
+            </div>
+
+        </section>
+
+        <!-- PANTALLA DEL RESULTADO -->
+        <section class="quiz-panel result-panel" id="resultPanel" hidden>
+
+            <span class="eyebrow">RESULTADO FINAL</span>
+
+            <h2 id="resultTitle">¡Terminaste!</h2>
+
+            <p id="resultScore"></p>
+
+            <div class="result-track">
+                <div id="resultBar"></div>
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <div class="quiz-actions">
+                <button id="retryBtn" type="button">
+                    Volver a intentar
+                </button>
+
+                <a class="nav-link" href="index.html">
+                    Volver a la guía
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Cuestionario de práctica · Educación Vial
+    </footer>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>

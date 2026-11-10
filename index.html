@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de Educación Vial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <span class="eyebrow">TRABAJO PRÁCTICO · TERCER TRIMESTRE</span>
+    <h1>Educación <span>Vial</span></h1>
+    <p>Preguntas y respuestas para estudiar y repasar.</p>
+    <nav class="main-nav">
+     <a class="nav-link active" href="index.html">📖 Guía</a>
+     <a class="nav-link" href="cuestionario.html">📝 Cuestionario</a>
+    </nav>
+  </header>
+  <main>
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="Buscar una pregunta..." aria-label="Buscar una pregunta">
+      <select id="category" aria-label="Filtrar por tema"><option value="">Todos los temas</option></select>
+      <button id="toggleAll" type="button">Mostrar todas las respuestas</button>
+    </section>
+    <div class="info"><span id="count">0 preguntas</span><span>Tip: tocá una tarjeta para revelar la respuesta.</span></div>
+    <section id="questions" class="questions" aria-live="polite"></section>
+  </main>
+  <footer>Guía de estudio · Educación Vial</footer>
+  <script src="script.js"></script>
+</body>
+</html>
