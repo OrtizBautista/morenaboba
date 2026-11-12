@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#171717">
+    <title>Guía de Reglamento | Educación Vial</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="guide-page regulation-page">
+
+    <header class="guide-hero">
+        <nav class="guide-nav">
+            <a href="../index.html" class="guide-back">← Menú principal</a>
+            <a href="../cuestionarios/quiz-reglamento.html" class="guide-quiz-link">
+                Ir al cuestionario →
+            </a>
+        </nav>
+
+        <div class="guide-heading">
+            <span class="eyebrow">UNIDAD 01 · REGLAMENTO</span>
+            <h1>Reglamento de tránsito</h1>
+            <p>
+                Conocé las normas, responsabilidades y principios
+                necesarios para circular de manera segura.
+            </p>
+        </div>
+    </header>
+
+    <main class="guide-container">
+
+        <section class="guide-intro">
+            <div>
+                <span class="guide-label">MATERIAL DE ESTUDIO</span>
+                <h2>Aprender las normas es el primer paso.</h2>
+                <p>
+                    Explorá las preguntas, buscá conceptos específicos
+                    y repasá cada explicación a tu propio ritmo.
+                </p>
+            </div>
+
+            <div class="guide-stat">
+                <span id="count">0</span>
+                <small>conceptos disponibles</small>
+            </div>
+        </section>
+
+        <section class="guide-tools">
+            <div class="guide-search">
+                <label for="search">Buscar contenido</label>
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Ej.: licencia, prioridad, peatones..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="guide-filter">
+                <label for="category">Categoría</label>
+                <select id="category">
+                    <option value="all">Todas las categorías</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="guide-results">
+            <div class="guide-results-heading">
+                <div>
+                    <span class="guide-label">CONTENIDO</span>
+                    <h2>Conceptos fundamentales</h2>
+                </div>
+
+                <button id="toggleAll" class="guide-toggle">
+                    Expandir todo
+                </button>
+            </div>
+
+            <div id="questions" class="guide-list"></div>
+        </section>
+
+        <section class="guide-bottom">
+            <p>Terminaste de repasar esta unidad?</p>
+            <a href="../cuestionarios/quiz-reglamento.html">
+                Poné a prueba tus conocimientos →
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="home-footer">
+        <p>Educación Vial · Aprender para circular mejor</p>
+    </footer>
+
+    <script src="../js/guia-reglamento.js"></script>
+
+</body>
+</html>

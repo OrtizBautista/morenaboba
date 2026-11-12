@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#171717">
+    <title>Cuestionario de Reglamento | Educación Vial</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="quiz-page regulation-page">
+
+    <header class="quiz-hero">
+        <nav class="quiz-nav">
+            <a href="../index.html" class="quiz-back">← Menú principal</a>
+            <a href="../guias/guia-reglamento.html" class="quiz-guide-link">
+                Volver a la guía →
+            </a>
+        </nav>
+
+        <div class="quiz-heading">
+            <span class="eyebrow">EVALUACIÓN · UNIDAD 01</span>
+            <h1>Reglamento de tránsito</h1>
+            <p>
+                Comprobá cuánto aprendiste sobre las normas,
+                responsabilidades y reglas de circulación.
+            </p>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+
+        <section class="quiz-card" id="quizPanel">
+
+            <div class="quiz-top">
+                <div>
+                    <span class="quiz-label">CUESTIONARIO</span>
+                    <h2 id="topic">Reglamento</h2>
+                </div>
+
+                <span class="quiz-progress-text" id="progress">
+                    Pregunta 1 de 15
+                </span>
+            </div>
+
+            <div class="quiz-progress-track">
+                <div class="quiz-progress-fill" id="progressBar"></div>
+            </div>
+
+            <div class="quiz-question-area">
+                <span class="quiz-question-label">PREGUNTA</span>
+                <h3 id="questionText"></h3>
+            </div>
+
+            <div id="options" class="quiz-options"></div>
+
+            <div id="feedback" class="quiz-feedback" aria-live="polite"></div>
+
+            <div class="quiz-actions">
+                <button id="nextBtn" class="quiz-next" disabled>
+                    Siguiente pregunta →
+                </button>
+            </div>
+
+        </section>
+
+
+        <section class="quiz-card quiz-results" id="resultPanel" hidden>
+
+            <span class="quiz-label">EVALUACIÓN COMPLETADA</span>
+
+            <h2 id="resultTitle">¡Cuestionario terminado!</h2>
+
+            <div class="quiz-score">
+                <span id="resultScore">0%</span>
+                <small>Tu resultado</small>
+            </div>
+
+            <div class="quiz-progress-track">
+                <div class="quiz-progress-fill" id="resultBar"></div>
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <button id="retryBtn" class="quiz-next">
+                Volver a intentarlo ↻
+            </button>
+
+            <a href="../guias/guia-reglamento.html" class="quiz-return">
+                Repasar la guía →
+            </a>
+
+        </section>
+
+        <section class="quiz-disclaimer">
+            <p>
+                Este cuestionario es una herramienta de práctica y
+                repaso. No reemplaza el estudio de la normativa vigente.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="home-footer">
+        <p>Educación Vial · Aprender para circular mejor</p>
+    </footer>
+
+    <script src="../js/quiz-reglamento.js"></script>
+
+</body>
+</html>

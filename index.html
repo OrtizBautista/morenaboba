@@ -1,31 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guía de Educación Vial</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Educación Vial</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="hero">
-    <span class="eyebrow">TRABAJO PRÁCTICO · TERCER TRIMESTRE</span>
-    <h1>Educación <span>Vial</span></h1>
-    <p>Preguntas y respuestas para estudiar y repasar.</p>
-    <nav class="main-nav">
-     <a class="nav-link active" href="index.html">📖 Guía</a>
-     <a class="nav-link" href="cuestionario.html">📝 Cuestionario</a>
-    </nav>
-  </header>
-  <main>
-    <section class="toolbar">
-      <input id="search" type="search" placeholder="Buscar una pregunta..." aria-label="Buscar una pregunta">
-      <select id="category" aria-label="Filtrar por tema"><option value="">Todos los temas</option></select>
-      <button id="toggleAll" type="button">Mostrar todas las respuestas</button>
-    </section>
-    <div class="info"><span id="count">0 preguntas</span><span>Tip: tocá una tarjeta para revelar la respuesta.</span></div>
-    <section id="questions" class="questions" aria-live="polite"></section>
-  </main>
-  <footer>Guía de estudio · Educación Vial</footer>
-  <script src="script.js"></script>
+
+    <header class="hero">
+        <span class="eyebrow">PLATAFORMA EDUCATIVA</span>
+
+        <h1>Educación Vial</h1>
+
+        <p>
+            Aprendé las normas de tránsito, reconocé las señales
+            y poné a prueba tus conocimientos.
+        </p>
+    </header>
+
+    <main class="home-container">
+
+        <!-- SELECCIÓN PRINCIPAL -->
+        <section id="mainMenu" class="menu-section">
+
+            <h2>¿Qué querés hacer?</h2>
+
+            <p class="section-description">
+                Elegí cómo querés aprender.
+            </p>
+
+            <div class="main-options">
+
+                <button class="main-card guide-card" data-mode="guias">
+                    <span class="card-icon">📖</span>
+
+                    <h3>Guías de estudio</h3>
+
+                    <p>
+                        Consultá los contenidos y aprendé
+                        los conceptos fundamentales.
+                    </p>
+
+                    <span class="card-action">Explorar guías →</span>
+                </button>
+
+                <button class="main-card quiz-card" data-mode="quiz">
+                    <span class="card-icon">📝</span>
+
+                    <h3>Cuestionarios</h3>
+
+                    <p>
+                        Poné a prueba lo aprendido con
+                        preguntas y evaluaciones.
+                    </p>
+
+                    <span class="card-action">Ver cuestionarios →</span>
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- SELECCIÓN DE TEMAS -->
+        <section id="topicMenu" class="menu-section hidden">
+
+            <button id="backBtn" class="back-button">
+                ← Volver
+            </button>
+
+            <h2 id="topicTitle">Seleccioná un tema</h2>
+
+            <p id="topicDescription" class="section-description">
+                Elegí una de las siguientes unidades.
+            </p>
+
+            <div class="topic-options">
+
+                <a class="topic-card" href="guias/guia-reglamento.html"
+                   data-guide="reglamento">
+
+                    <span class="topic-number">01</span>
+
+                    <div>
+                        <h3>Reglamento de tránsito</h3>
+                        <p>Normas, responsabilidades y circulación.</p>
+                    </div>
+
+                    <span class="topic-arrow">→</span>
+                </a>
+
+                <a class="topic-card" href="guias/guia-senalizacion.html"
+                   data-guide="senalizacion">
+
+                    <span class="topic-number">02</span>
+
+                    <div>
+                        <h3>Señalización vial</h3>
+                        <p>Señales, marcas viales y semáforos.</p>
+                    </div>
+
+                    <span class="topic-arrow">→</span>
+                </a>
+
+                <a class="topic-card" href="guias/guia-velocidades.html"
+                   data-guide="velocidades">
+
+                    <span class="topic-number">03</span>
+
+                    <div>
+                        <h3>Velocidades máximas</h3>
+                        <p>Límites de velocidad según cada vía.</p>
+                    </div>
+
+                    <span class="topic-arrow">→</span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="home-footer">
+        <p>Educación Vial · Aprender para circular mejor</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
